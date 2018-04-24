@@ -25,7 +25,7 @@
         $resultado = mysqli_query($conecta,$sql);
         $numero_linhas = mysqli_num_rows($resultado);
         while ($linha = mysqli_fetch_array($resultado)){
-            $_SESSION['nivel']=$linha['nivel'];        
+            $_SESSION['nivel']=$linha['nivel_id'];        
             $_SESSION['login']=$_POST['login'];
             $_SESSION['senha']=$_POST['senha'];
             echo($_SESSION['nivel']);
